@@ -27,4 +27,4 @@ jobs:
         with:
           context: ./src/adservice/
           push: true
-          tags: neurofunkbeat/microservicedemo
+          tags: neurofunkbeat/microservicedemo/adservice
