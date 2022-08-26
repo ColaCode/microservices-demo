@@ -27,12 +27,7 @@ jobs:
         with:
           context: ./src/adservice/
           push: true
-          tags: neurofunkbeat/microservicedemo
+          tags: neurofunkbeat/microservicedemo:adservice
        
-       name: Build and push
-        uses: docker/build-push-action@v3
-        with:
-          context: ./src/cartservice/src/
-          push: true
-          tags: neurofunkbeat/microservicedemo:cartservice  
+    
         
