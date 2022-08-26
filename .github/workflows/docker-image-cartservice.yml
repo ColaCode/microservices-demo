@@ -34,5 +34,5 @@ jobs:
         with:
           context: ./src/cartservice/src/
           push: true
-          tags: neurofunkbeat/microservicedemo  
+          tags: neurofunkbeat/microservicedemo:cartservice  
         
