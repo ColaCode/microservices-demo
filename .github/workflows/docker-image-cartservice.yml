@@ -35,6 +35,80 @@ jobs:
           context: ./src/cartservice/src/
           push: true
           tags: neurofunkbeat/microservicedemo:cartservice
+      -
+        name: Build and push
+        uses: docker/build-push-action@v3
+        with:
+          context: ./src/checkoutservice/
+          push: true
+          tags: neurofunkbeat/microservicedemo:checkoutservice
+      -
+        name: Build and push
+        uses: docker/build-push-action@v3
+        with:
+          context: ./src/currencyservice/
+          push: true
+          tags: neurofunkbeat/microservicedemo:currencyservice
+      -
+        name: Build and push
+        uses: docker/build-push-action@v3
+        with:
+          context: ./src/emailservice/
+          push: true
+          tags: neurofunkbeat/microservicedemo:emailservice
+      -
+        name: Build and push
+        uses: docker/build-push-action@v3
+        with:
+          context: ./src/frontend/
+          push: true
+          tags: neurofunkbeat/microservicedemo:frontend
+      -
+        name: Build and push
+        uses: docker/build-push-action@v3
+        with:
+          context: ./src/loadgenerator/
+          push: true
+          tags: neurofunkbeat/microservicedemo:loadgenerator
+      -
+        name: Build and push
+        uses: docker/build-push-action@v3
+        with:
+          context: ./src/paymentservice/
+          push: true
+          tags: neurofunkbeat/microservicedemo:paymentservice
+      -
+        name: Build and push
+        uses: docker/build-push-action@v3
+        with:
+          context: ./src/productcatalogservice/
+          push: true
+          tags: neurofunkbeat/microservicedemo:productcatalogservice
+      -
+        name: Build and push
+        uses: docker/build-push-action@v3
+        with:
+          context: ./src/productcatalogservice/
+          push: true
+          tags: neurofunkbeat/microservicedemo:productcatalogservice    
+      -
+        name: Build and push
+        uses: docker/build-push-action@v3
+        with:
+          context: ./src/recommendationservice/
+          push: true
+          tags: neurofunkbeat/microservicedemo:recommendationservice         
+      -
+        name: Build and push
+        uses: docker/build-push-action@v3
+        with:
+          context: ./src/shippingservice/
+          push: true
+          tags: neurofunkbeat/microservicedemo:shippingservice
+          
+
+
+          
        
     
         
